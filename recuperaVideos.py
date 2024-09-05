@@ -28,7 +28,7 @@ def get_youtube_videos():
             part='snippet',
             channelId=channel_id,
             type='video',
-            maxResults=50,
+            maxResults=100,
             pageToken=next_page_token
         )
         search_response = search_request.execute()
@@ -109,3 +109,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# api do youtube é mto inconsistente.
